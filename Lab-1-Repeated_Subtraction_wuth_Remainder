@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+int main ()
+
+{
+	int Dividend;
+	int Divisor;
+	int Partial_Quotient;
+	Partial_Quotient = 0;
+	
+	printf("Dividend: ");
+	scanf("%d", &Dividend);
+	printf("Divisor: ");
+	scanf("%d", &Divisor);
+	
+	if (Divisor <= 0 || Dividend <=0) {
+		printf("This doesn't accept negative numbers\n");
+	}	else	{
+		while (Dividend >= Divisor) {
+			(Dividend = Dividend - Divisor);
+			Partial_Quotient ++;
+		}
+	}
+
+
+
+	printf("Quotient: %d\n", Partial_Quotient);
+	printf("Remainder : %d\n", Dividend );
+
+return 0;
+}
