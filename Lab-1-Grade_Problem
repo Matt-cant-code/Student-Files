@@ -1,0 +1,40 @@
+#include <stdio.h>
+
+int main ()
+
+{
+int Term_Exam;
+int Quizzes;
+int Assignments;
+int Grade;
+
+
+ printf("The value of Term Exam: ");
+ scanf("%d" , &Term_Exam);
+ 
+ printf("The value of Quizzes: ");
+ scanf("%d", &Quizzes);
+ 
+ printf("The value of Assignments: ");
+ scanf("%d", &Assignments);
+ 
+ Grade = (Term_Exam*0.5 + Quizzes*0.3 + Assignments*0.2);
+ 
+ if (Grade >100 || Grade < 0)
+ printf("No such Grade Exist");
+ else if (Grade >=91)
+ printf("Your grade is A");
+ else if (Grade >=81)
+ printf("Your Grade is B");
+ else if (Grade >=71)
+ printf("Your Grade is C");
+ else if (Grade >=61)
+ printf("Your Grade is D");
+ else if (Grade >=51)
+ printf("Your Grade is E");
+ else
+ printf ("Your Grade is F");
+ 
+ return 0;
+ 
+}
