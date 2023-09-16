@@ -1,0 +1,42 @@
+#include <stdio.h>
+
+int main ()
+
+{
+	int x;
+	int y;
+	int z;
+	
+	printf("This program determines which is the largest \non the 3 numbers you'll give\n");
+	
+	printf("The value of x: ");
+	scanf("%d", &x);
+	printf("The value of y: ");
+	scanf("%d", &y);
+	printf("The value of z: ");
+	scanf("%d", &z);
+	
+	if (x>y && x>z) {
+		printf("%d is the largest number", x);
+	}
+		else if (y>z && y>x) {
+			printf ("%d is the largest number", y);
+		}
+			else if (z>x && z>y) {
+				printf("%d is the largest number", z); 
+			}
+				else if (x==y && x>z)	{
+				printf ("x and y are the largest numbers");
+				}
+					else if (x==z && x>y) {
+						printf ("x and z are the largest numbers");
+					}
+						else if (y ==z && y>x) {
+							printf ("y and z are the largest numbers");
+						}
+							else
+							printf("There are all equal");
+							
+return 0;
+		
+}
