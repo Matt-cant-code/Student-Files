@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main ()
+{
+	int number;
+	int answer;
+	answer=1;
+	
+	printf("Give me a number: ");
+	scanf("%d", &number);
+
+
+		while (number > 1) {
+			answer = answer * number;
+			number --;
+		}
+	
+	printf ("The factorial of that is %d", answer);
+
+}
