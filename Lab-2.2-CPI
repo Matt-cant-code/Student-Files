@@ -1,0 +1,24 @@
+/* The consumer price index (CPI) of a certain economy 
+is described by the function l(t) = -0.2t^3+3t^2+100
+
+Write a C code that would ask the user for t in years and
+I(t) as the consumer price index. */
+
+
+#include <stdio.h>
+#include <math.h>
+
+int main()
+
+{
+	int t;
+	float consumer_price_index;
+	
+	printf("What is the value of year/s? ");
+	scanf("%d", &t);
+	
+	consumer_price_index = pow(-0.2 * t, 3) + pow(3 * t, 2) + 100;
+
+	printf("In %d year/s,\nThe consumer price index will be %f", t, consumer_price_index);
+	
+}
