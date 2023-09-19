@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main ()
+
+{
+	int hour, minutes, seconds;
+	
+	printf("How many seconds?");
+	scanf("%d", &seconds);
+	
+	hour = seconds / 3600;
+	minutes = seconds % 3600;
+	seconds = minutes % 60;
+	minutes = minutes / 60; 
+	
+	
+	/* hour = seconds / 3600;
+    seconds = seconds % 3600;
+    
+    minutes = seconds / 60;
+    seconds = seconds % 60; */
+	
+	
+	printf("That is %d hour/s\n%dminute/s\n%dsecond/s\n", hour, minutes, seconds);
+	;
+	return 0;
+}
