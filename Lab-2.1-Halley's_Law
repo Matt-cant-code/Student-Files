@@ -1,0 +1,24 @@
+/* Halley's law states that the barometric pressure (in inches of mercury(Hg))
+at an altitude of x miles above sea level is approximated by the equation: p(x)= 29.29^e-0.2x */
+
+#include <stdio.h>
+#include <math.h>
+
+int main ()
+
+{
+	float x;
+	float mmHg;
+	float inHg;
+	
+	printf("What is the altitude of miles?");
+	scanf("%f", &x);
+	
+	mmHg = 29.29 * exp (-0.2 * x);
+	inHg = mmHg * 25.4;
+	
+	printf("That is %f mmHg or %f inHg", mmHg, inHg);
+	
+	
+	
+}
