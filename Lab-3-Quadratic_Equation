@@ -1,0 +1,48 @@
+#include <stdio.h>
+#include <math.h>
+
+int main ()
+
+{
+	float x1, x2 , a, b, c, d;
+	
+	printf("What is a ? ");
+	scanf("%f", &a);
+	
+	printf("What is b ? ");
+	scanf("%f", &b);
+	
+	printf("What is c ? ");
+	scanf("%f", &c);
+	
+	d = pow(b, 2) -4 * a * c;
+
+	if (a==0)
+	{
+		printf(" a should not be equal to zero");
+	}
+	else if (d > 0)
+	 {
+		x1 = ( -1 * b + sqrt(pow(b, 2) -4 * a * c) )/ (2 * a);
+		x2 = ( -1 * b - sqrt(pow(b, 2) -4 * a * c) )/ (2 * a);
+	 
+		printf("The value of x's is %f and %f\n", x1, x2);
+	}
+	else if (d == 0) 
+	{
+		x1 = ( -1 * b )/ (2 * a);
+		
+		printf("The value of x is %f \n", x1);
+	}
+	else 
+	{
+	printf("x has no real values");
+	}
+	
+	return 0;
+	
+}
+
+
+		
+	
